@@ -1,0 +1,41 @@
+WASTL BAU – technischer Abschlusscheck, 08.10.2026
+
+Diese Upload-Fassung ist für die Domain https://wastl-bau.de/ im Webroot vorgesehen.
+Kein Build und keine Installation notwendig. Inhalte des Ordners hochladen.
+Nicht für GitHub Pages unter /repository-name/ ohne Pfadanpassung geeignet.
+Die lokale Arbeitsvorschau bleibt noindex; diese Upload-Fassung ist indexierbar.
+Die ungenutzte Kontakt-Altseite /wastl-kartn/ bleibt noindex.
+Englische Altseiten wurden nicht in den Upload übernommen.
+
+GEPRÜFT / VERBESSERT
+- 15 deutsche HTML-Seiten: genau eine H1, individuelle Titel, Beschreibung, Canonical.
+- Interne href/src-Ziele und Sprungmarken: automatisierter Check ohne Fehler.
+- JSON-LD lässt sich parsen; Unternehmensdaten zentral über dieselbe @id verknüpft.
+- Keine erfundenen Bewertungen, Projektorte oder Zertifizierungen ergänzt.
+- Fotos als WebP: 15.920.225 auf 3.355.360 Bytes (rund 79 % weniger).
+  Originale bleiben als Sicherung bzw. für vorhandene Social-Media-Bildadressen enthalten.
+- Inhaltsfotos mit festen Abmessungen und Lazy Loading; Hero mit hoher Ladepriorität.
+- Kleine 32-Pixel-Favicon- und 180-Pixel-Apple-Icon-Versionen.
+- robots.txt verweist auf die Sitemap mit der Zieldomain.
+- Bestehende Maurerarbeiten-URL erhalten; Seitentitel/Bezeichnung vereinheitlicht.
+
+VOR UND NACH LIVEGANG
+1. Offene Rechtstext-Punkte aus VEROEFFENTLICHUNG.txt bestätigen. Dieser Check ist keine Rechtsfreigabe.
+2. HTTPS aktivieren und www dauerhaft auf https://wastl-bau.de/ weiterleiten.
+3. Auf dem echten Server alle Seiten auf Status 200 prüfen; unbekannte URLs müssen 404 liefern.
+4. Keine zusätzlichen X-Robots-Tag: noindex vom Hoster setzen lassen.
+5. Cache/Komprimierung beim Hoster aktivieren; Core Web Vitals und PageSpeed auf Live-Domain messen.
+6. Google Search Console per DNS verifizieren und sitemap.xml einreichen.
+7. Google-Unternehmensprofil: Name, Adresse, Telefon, Domain und Leistungsangebot abgleichen.
+8. E-Mail-Zustellung und Telefonlinks praktisch testen.
+9. Projektbeschreibungen mit bestätigten Aufgaben, Umfang und Ergebnissen weiter ausbauen.
+
+GEO
+Klare Anbieteridentität, sichtbare Leistungsinformationen, lokale Fakten und nachvollziehbare
+Projektbilder bilden die Grundlage. Keine gesonderten KI-Rankingversprechen oder erfundenen
+Suchvolumina. JSON-LD-Parsing ist keine Zusage für Rich Results oder KI-Zitate.
+Quelle: https://developers.google.com/search/docs/fundamentals/ai-optimization-guide
+
+Hinweis zur älteren VEROEFFENTLICHUNG.txt:
+Die dortigen Schritte 4 (noindex entfernen) und 5 (Sitemap in robots.txt) sind in DIESER
+Upload-Fassung bereits erledigt. In der lokalen Arbeitsvorschau bleiben sie bewusst offen.

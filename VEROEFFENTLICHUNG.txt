@@ -1,0 +1,44 @@
+WASTL BAU — Stand 2. Oktober 2026
+Lokale Vorschau: http://127.0.0.1:3003/
+Zieldomain (vom Nutzer bestätigt): https://wastl-bau.de/
+E-Mail: info@wastl-bau.de
+Geschäftsadresse: Bretonischer Ring 6, 85630 Grasbrunn
+Telefon: +49 157 50698451
+
+UMGESETZT
+15 deutsche Seiten inklusive Rechtstext-Entwürfen und Kontaktkarte.
+Sechs ausführliche Leistungsseiten, darunter Baumanagement als ergänzende Leistung.
+Individuelle Seitentitel, Beschreibungen, Canonicals, Open-Graph-Grunddaten.
+Strukturierte Unternehmens-, Leistungs- und sichtbaren FAQ-Daten.
+Sitemap für die bestätigte Zieldomain.
+Serverseitig lesbare statische Inhalte, lokale Schriften, verzögertes Laden der Inhaltsbilder.
+Keine erfundenen Bewertungen, Projektorte, Zahlen, Stellenausschreibungen oder Garantien.
+Header-Geometrie und Scrollskript unverändert. Lediglich mobile Menü-Kontraste und Tastaturzugänglichkeit repariert.
+Footer-Gestaltung beibehalten, E-Mail ergänzt.
+Sicherung: ../wastl-bau-backup-vor-gesamtausarbeitung-20261002/
+
+VOR VERÖFFENTLICHUNG
+1. Impressum: etwaigen Registereintrag und Angaben zur Verbraucherschlichtung klären. Anbieter: HochZwei Bau Sebastian Gagel. Wirtschafts-ID ist eingetragen; sie ist kein Nachweis einer USt-IdNr. Die persönliche Steuernummer nicht veröffentlichen.
+2. Datenschutz: konkretes IONOS-Hostingprodukt, tatsächliche Speicherfristen, Auftragsverarbeitungsvereinbarungen sowie Microsoft-365-Vertrags- und Übermittlungseinstellungen abgleichen. Die lokale Vorschau wird nicht bei IONOS ausgeliefert.
+   Die sichtbaren Entwurfshinweise wurden auf Wunsch entfernt; das ersetzt keine abschließende inhaltliche Prüfung.
+3. Bildrechte und die fachlichen Leistungsaussagen abschließend freigeben.
+4. Nach Freigabe noindex,follow auf den deutschen öffentlichen Seiten durch index,follow ersetzen.
+   Englisch-Altseiten bleiben noindex; keine Sprachumschaltung vorhanden.
+5. robots.txt um Sitemap: https://wastl-bau.de/sitemap.xml ergänzen.
+6. HTTPS und www-Weiterleitung auf die gewählte Hauptdomain konfigurieren.
+7. E-Mail-Empfang und Telefonlinks praktisch testen.
+8. Search Console verifizieren und Sitemap einreichen; Google-Unternehmensprofil mit identischen Kontaktdaten verknüpfen.
+9. Nach Veröffentlichung Indexierung, Ladezeit und tatsächliche Suchanfragen messen.
+Keine Rankings, KI-Zitate oder Suchvolumina werden garantiert.
+
+GRUNDLAGEN
+Google zu hilfreichen Inhalten:
+https://developers.google.com/search/docs/fundamentals/creating-helpful-content
+Google zu AI-Funktionen:
+https://developers.google.com/search/docs/appearance/ai-features
+Gestaltungsreferenzen, ohne Texte/Bilder zu übernehmen:
+https://www.gloeckle-bau.de/
+https://www.wolff-mueller.de/
+Fahrner: Nutzerreferenz/Screenshot; Abruf in dieser Sitzung fehlgeschlagen.
+PLZ-Abgleich Bretonischer Ring:
+https://www.landkreis-muenchen.de/themen/mobilitaet/fuehrerschein/kontakt-zur-fuehrerscheinstelle/
