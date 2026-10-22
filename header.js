@@ -14,10 +14,22 @@
   const toggle = header.querySelector(".nav-toggle");
   const menu = header.querySelector(".main-nav");
   const label = header.querySelector(".hamburger");
+  const serviceToggle = header.querySelector(".service-toggle");
+  const serviceGroup = header.querySelector(".nav-service");
+  const closeServices = () => {
+    serviceGroup?.classList.remove("services-open");
+    serviceToggle?.setAttribute("aria-expanded", "false");
+  };
+  serviceToggle?.addEventListener("click", () => {
+    const expanded = serviceToggle.getAttribute("aria-expanded") !== "true";
+    serviceToggle.setAttribute("aria-expanded", String(expanded));
+    serviceGroup.classList.toggle("services-open", expanded);
+  });
   if (toggle && menu && label) {
     menu.id = "main-navigation";
     toggle.setAttribute("aria-controls", menu.id);
     const syncMenu = () => {
+      if (!toggle.checked) closeServices();
       toggle.setAttribute("aria-expanded", String(toggle.checked));
       toggle.setAttribute("aria-label", toggle.checked ? "Menü schließen" : "Menü öffnen");
     };
@@ -27,6 +39,9 @@
     });
     document.addEventListener("keydown", (event) => {
       if (event.key === "Escape" && toggle.checked) {
+        if (serviceToggle?.getAttribute("aria-expanded") === "true") {
+          closeServices(); serviceToggle.focus(); return;
+        }
         toggle.checked = false; syncMenu(); toggle.focus();
       }
     });
