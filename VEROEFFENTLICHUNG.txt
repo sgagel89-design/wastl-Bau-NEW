@@ -1,7 +1,9 @@
-WASTL BAU – bereinigter Export, 22. Oktober 2026
+WASTL BAU – vollständiger Website-Export, 28. Oktober 2026
 20 deutsche Seiten einschließlich vier Stellenausschreibungen.
 Wastl-Kartn, englische Altseiten und ungenutzte Assets entfernt und außerhalb der Website lokal archiviert. Kein Download-Bereich eingerichtet.
 
-Vor Veröffentlichung: noindex in der Produktionskopie nach Freigabe entfernen. Hostingprodukt, Logfristen, Microsoft-365-Vertragsdetails sowie Register-/Schlichtungsangaben klären. Rechtstexte sind noch nicht abschließend freigegeben.
+SEO-Stand: Alle 20 HTML-Seiten stehen auf index,follow. robots.txt erlaubt Crawling; sitemap.xml enthält die Seiten mit HTTPS-Adressen. Kein noindex muss entfernt werden. Dies ermöglicht die Indexierung, garantiert aber keine Aufnahme oder Platzierung bei Google.
+Offene Betreiberprüfung vor Veröffentlichung: Hostingprodukt, Logfristen, Microsoft-365-Vertragsdetails sowie Register-/Schlichtungsangaben bestätigen. Eine abschließende rechtliche Freigabe wurde durch die technische Prüfung nicht ersetzt.
+Upload: ZIP entpacken und die Website-Dateien in das vorgesehene Veröffentlichungsverzeichnis übernehmen. index.html muss dort direkt liegen. Vorhandene Hosting-Konfiguration und GitHub-Workflows nicht pauschal ersetzen. Diese Hinweisdatei muss nicht öffentlich hochgeladen werden.
 HTTPS, Canonicals, Sitemap und Kontaktwege live prüfen.
 Alte Ordner /wastl-kartn/ und /en/ auf bestehendem Hosting gesondert entfernen oder weiterleiten. Ein ZIP-Upload löscht dort keine alten Dateien.

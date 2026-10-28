@@ -1,12 +1,4 @@
 (() => {
-  const stylesheet = Array.from(document.querySelectorAll('link[rel="stylesheet"]'))
-    .find((link) => link.getAttribute("href")?.includes("styles.css"));
-  if (stylesheet) {
-    const stylesheetUrl = new URL(stylesheet.href, window.location.href);
-    stylesheetUrl.searchParams.set("v", "20260922-6");
-    stylesheet.href = stylesheetUrl.href;
-  }
-
   const header = document.querySelector(".site-header");
   if (!header) return;
 
@@ -16,6 +8,12 @@
   const label = header.querySelector(".hamburger");
   const serviceToggle = header.querySelector(".service-toggle");
   const serviceGroup = header.querySelector(".nav-service");
+  // Highlight the current section without changing the shared navigation markup.
+  const currentPath = window.location.pathname.replace(/index\.html$/, "");
+  menu?.querySelectorAll("a[href]").forEach((link) => {
+    const url = new URL(link.href);
+    if (url.pathname === currentPath && !url.hash) link.setAttribute("aria-current", "page");
+  });
   const closeServices = () => {
     serviceGroup?.classList.remove("services-open");
     serviceToggle?.setAttribute("aria-expanded", "false");
@@ -38,6 +36,10 @@
       if (event.target.closest("a")) { toggle.checked = false; syncMenu(); }
     });
     document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && !toggle.checked && serviceGroup?.contains(document.activeElement)) {
+        closeServices();
+        serviceGroup.nextElementSibling?.focus();
+      }
       if (event.key === "Escape" && toggle.checked) {
         if (serviceToggle?.getAttribute("aria-expanded") === "true") {
           closeServices(); serviceToggle.focus(); return;
@@ -70,4 +72,22 @@
 
   updateHeader();
   window.addEventListener("scroll", requestHeaderUpdate, { passive: true });
+
+  // Content stays visible without JavaScript and with reduced motion enabled.
+  const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
+  if (!motionPreference.matches && "IntersectionObserver" in window) {
+    const blocks = document.querySelectorAll(".wb-welcome-copy, .wb-welcome-contact, .wb-heading, .wb-services > a, .wb-feature > div, .wb-points > article, .wb-project-grid > a");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("wb-enter");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    blocks.forEach((block) => observer.observe(block));
+    motionPreference.addEventListener("change", (event) => {
+      if (event.matches) observer.disconnect();
+    });
+  }
 })();
