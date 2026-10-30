@@ -1,0 +1,15 @@
+WASTL BAU – Website-Export, 30. Oktober 2026
+21 HTML-Seiten inklusive separater Seiten „So arbeiten wir“ und „Referenzen“ sowie ausgewähltem Softshell-Porträt auf „Über uns“.
+
+ZIP entpacken und die enthaltenen Dateien und Ordner ins GitHub-Repository übernehmen, nicht nur die ZIP hochladen. index.html muss direkt im Veröffentlichungsverzeichnis liegen. Kein Build erforderlich. Bestehende Hosting-Konfigurationen und Workflows nicht pauschal ersetzen. Diese Hinweisdatei muss nicht veröffentlicht werden.
+Die absoluten Pfade setzen die Domainwurzel voraus. Für GitHub Pages unter /repository-name/ ist eine Pfadanpassung erforderlich. Für IONOS unter wastl-bau.de ist die Struktur auf die Domainwurzel ausgelegt.
+Ein Repository mit automatischem Deployment kann beim Upload unmittelbar veröffentlichen.
+
+VOR ÖFFENTLICHEM UPLOAD:
+Die Datenschutzerklärung enthält noch Entwurfspassagen zu Logfristen und Microsoft-365-Vertragsdetails. Diese müssen abschließend konkretisiert werden. Dieses Paket ist keine rechtliche Freigabe.
+Bestätigt: HochZwei Bau – Sebastian Gagel; Marke WASTL BAU; Bretonischer Ring 6, 85630 Grasbrunn; Hosting IONOS; E-Mail Microsoft 365; W-IdNr. DE320597323. Das vorhandene Unterscheidungsmerkmal 00001 wurde nicht gesondert bestätigt. Die mitgeteilte Steuernummer wurde nicht ergänzt.
+Das Energieberaterzeugnis enthält weiterhin persönliche Angaben einschließlich Geburtsdatum. Vor öffentlichem Upload über eine geschwärzte Fassung entscheiden. Auch öffentliche Git-Repositories machen die Bilddatei zugänglich.
+
+PRÜFUNG:
+Statischer Seitencheck: 21 Seiten, keine gemeldeten Fehler, Sitemap vollständig. Keine erneute vollständige visuelle Desktop-/Mobilprüfung im Rahmen dieses Exports.
+Canonicals und Sitemap verweisen auf https://wastl-bau.de/. Nach Veröffentlichung HTTPS, Bilder, Navigation, Telefon- und E-Mail-Links live prüfen. Uploads entfernen keine alten Dateien auf dem Hosting.
